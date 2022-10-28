@@ -2929,7 +2929,7 @@ class RTCSession extends EventManager implements Owner {
   void _connecting(dynamic request) {
     logger.d('session connecting');
     logger.d('emit "connecting"');
-    emit(EventCallConnecting(session: this, request: request));
+    emit(EventCallConnecting(session: this, request: request, call_id: _request.call_id.toString()));
   }
 
   void _progress(String originator, dynamic response) {

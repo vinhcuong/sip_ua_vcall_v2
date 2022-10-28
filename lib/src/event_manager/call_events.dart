@@ -18,7 +18,8 @@ class EventNewRTCSession extends CallEvent {
 }
 
 class EventCallConnecting extends CallEvent {
-  EventCallConnecting({RTCSession? session, dynamic request}) : super(session);
+  EventCallConnecting({RTCSession? session, dynamic request, this.call_id}) : super(session);
+  String? call_id;
 }
 
 class EventCallEnded extends CallEvent {

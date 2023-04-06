@@ -9,7 +9,12 @@ environment:
 dependencies:
   collection: ^1.15.0
   crypto: ^3.0.0
-  flutter_webrtc: 0.9.17
+#  sửa lỗi thư viện not found
+#  flutter_webrtc: 0.9.17
+  flutter_webrtc:
+    git:
+      url: https://github.com/vinhcuong/flutter_webrtc.git
+      ref: 0.0.3
   intl: ^0.17.0
   logger: ^1.0.0
   parser_error: ^0.2.0
